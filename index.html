@@ -111,6 +111,8 @@
                 document.getElementById('message').style.color = 'green';
                 document.getElementById('message').textContent = 'Login successful';
                 document.getElementById('message').style.display = 'block';
+                // Redirect to home.html after successful login
+                window.location.href = 'home.html';
             } else {
                 document.getElementById('message').style.color = 'red';
                 document.getElementById('message').textContent = 'Invalid username or password';
