@@ -8,38 +8,58 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #add8e6; /* Light blue background color */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #e8dfdf;
-            margin: 0;
         }
         .container {
-            background-color: #564b93;
+            max-width: 600px;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #99bcf2; /* Light green background color */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(214, 217, 207, 0.1);
             text-align: center;
         }
         h2 {
-            margin-bottom: 20px;
+            color: #7b2407;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
         }
         select {
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
+            margin-bottom: 20px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 4px;
+            background-color: #acf5ce; /* Light red background color */
+            transition: background-color 0.3s ease;
+        }
+        select:hover {
+            background-color: #e0e0e0; /* Light grey background color on hover */
+        }
+        option {
+            padding: 10px;
         }
         button {
             width: 100%;
             padding: 10px;
-            background-color: #28a745;
+            background-color: #28a745; /* Green background color */
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
             color: #fff;
             font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838; /* Darker green on hover */
         }
     </style>
 </head>
@@ -52,8 +72,7 @@
             <option value="option2">Komal</option>
             <option value="option3">Harman</option>
         </select>
-        <!-- Optional: You can add a button here if needed -->
-        <!-- <button type="submit">Submit</button> -->
+        <button type="submit">Submit</button>
     </div>
 </body>
 </html>
