@@ -19,6 +19,7 @@
         .container {
             max-width: 600px;
             padding: 20px;
+            background-image: url('c:/Users/harjo/Pictures/harjotabout.jpg');
             background-color: #99bcf2; /* Light green background color */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(214, 217, 207, 0.1);
@@ -68,11 +69,20 @@
         <h2>Welcome to the Home Page</h2>
         <label for="options">Choose an option:</label>
         <select id="options">
-            <option value="option1">Harjot</option>
-            <option value="option2">Komal</option>
-            <option value="option3">Harman</option>
+            <option value="harjot">Harjot</option>
+            <option value="komal">Komal</option>
+            <option value="harman">Harman</option>
         </select>
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="redirectToPage()">Submit</button>
     </div>
+    <script>
+        function redirectToPage() {
+            const selectedOption = document.getElementById('options').value;
+            if (selectedOption === 'harjot') {
+                window.location.href = 'harjot.html';
+            }
+            // Add more conditions for other options if needed
+        }
+    </script>
 </body>
 </html>
